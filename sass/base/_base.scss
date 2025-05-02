@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+body{
+    color: $primary-text-color;
+    background-color: $white-color;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+}

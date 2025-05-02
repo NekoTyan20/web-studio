@@ -1,0 +1,56 @@
+.first-header{
+    margin: 0;
+    margin-bottom: 30px;
+
+    color: $white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+    }
+}
+
+.second-title{
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+    }
+}
+
+.third-title{
+    margin: 0;
+    margin-bottom: 10px;
+
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &.white{
+        color: $white-color;
+        margin: 0;
+    }
+
+    &.footer{
+        color: $white-color;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 1139px) {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}

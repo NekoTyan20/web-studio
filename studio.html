@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-border">
+            <nav class="container header-block">
+                <a href="" class="logo link"><span class="accent">Web</span>Studio</a>
+                <button type="button" class="btn-burger">
+                    <svg class="icons-mobile-menu" width = "40" height = "40" aria-label="mobile menu switch">
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <div class="header-burger-elements">
+                    <ul class="list navigation-block">
+                        <li class="navigation-block__item">
+                            <a href="" class="nav link active">Studio</a>
+                        </li>
+                        <li class="navigation-block__item">
+                            <a href="./portfolio.html" class="nav link">Portfolio</a>
+                        </li>
+                        <li class="navigation-block__item">
+                            <a href="" class="nav link">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="list contact-block">
+                        <li class="contact-block__item">
+                            <a href="mailto:info@devstudio.com" class="contact-header accent-mail-mobile icon-contact link">
+                                <svg class="icon-contact__item envelope">
+                                    <use  href="./images/sprite.svg#icon-envelope"></use>
+                                </svg> 
+                            info@devstudio.com </a>
+                        </li>
+                        <li class="contact-block__item">
+                            <a href="tel:+380961111111" class="contact-header icon-contact link">
+                                <svg  class="icon-contact__item phone">
+                                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                                </svg>
+                            +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+
+                    <ul class="links-social-burger list">
+                        <li class="links-social-burger__item">
+                            <a href="" class="link-social link">Instagram</a>
+                        </li>
+                        <li class="links-social-burger__item">
+                            <a href="" class="link-social link">Twitter</a>
+                        </li>
+                        <li class="links-social-burger__item">
+                            <a href="" class="link-social link">Facebook</a>
+                        </li>
+                        <li class="links-social-burger__item">
+                            <a href="" class="link-social link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="overlay">
+                <div class="container hero-section">
+                    <h1 class="first-header">Effective solutions<br>for your business</h1>
+                    <button type="button" class="button-hero link">Order a service</button>
+                </div>
+                <div class="backdrop is-hidden">
+                    <div class="modal">
+                        <div class="form-close-btn-position">
+                            <button type="button" class="close-form-btn">
+                                <svg class="close-form-btn__icon">
+                                    <use href="./images/sprite.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="modal-content">
+                            <p class="form-paragraph">Leave your info, we'll call back</p>
+
+                            <form action="">
+                                <div class="form-field">
+                                    <label for="name">Name</label>
+                                    <div class="form-field__input-block">
+                                        <input type="text" name="name" id="name">
+                                        <svg class="icon">
+                                            <use href="./images/sprite.svg#icon-person"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+    
+                                <div class="form-field">
+                                    <label for="phone">Phone</label>
+                                    <div class="form-field__input-block">
+                                        <input type="tel" name="phone" id="phone">
+                                        <svg class="icon">
+                                            <use href="./images/sprite.svg#icon-tel"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+    
+                                <div class="form-field">
+                                    <label for="email">Mail</label>
+                                    <div class="form-field__input-block">
+                                        <input type="email" name="email" id="email">
+                                        <svg class="icon">
+                                            <use href="./images/sprite.svg#icon-email"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-field form-field-last">
+                                    <label for="comment">Comment</label>
+                                    <textarea name="comment" id="comment" placeholder="Enter text"></textarea>
+                                </div>
+
+                                <label class="form-checkbox" for="checkbox">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <span class="icon"></span>
+                                    <span>I agree to the mailing list and accept the  <a href="">Terms of the Agreement</a></span>
+                                </label>
+
+                                <div class="block-btn-submit">
+                                    <button type="submit" class="button-hero button-hero__form">Submit</button>
+                                </div>
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="second-title hidden-element">Our advantages</h2>
+                <ul class="list our-advantages">
+                    <li class="our-advantages__item">
+                        <div class="icon-block">
+                            <svg class="icon-block__icon">
+                                <use href="./images/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="third-title advantages-title">Attention to detail</h3>
+                        <p class="main-text">Ideological considerations, as well as the beginning of daily systematic work on forming a position.</p>
+                    </li>
+                    <li class="our-advantages__item icon-clock">
+                        <div class="icon-block">
+                            <svg class="icon-block__icon">
+                                <use href="./images/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="third-title">Punctuality</h3>
+                        <p class="main-text">The task of the organization, in particular the framework and place of training of personnel entails.</p>
+                    </li>
+                    <li class="our-advantages__item icon-diagram">
+                        <div class="icon-block">
+                            <svg class="icon-block__icon">
+                                <use href="./images/sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="third-title">Planning</h3>
+                        <p class="main-text">Likewise, consultation with a broad asset is largely determinative. This process often shapes the direction of decision-making.</p>
+                    </li>
+                    <li class="our-advantages__item icon-astronaut">
+                        <div class="icon-block">
+                            <svg class="icon-block__icon">
+                                <use href="./images/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="third-title">Modern technologies</h3>
+                        <p class="main-text">The significance of these problems is so obvious that the implementation of planned tasks.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-padding hide-section">
+            <div class="container">
+                <h2 class="second-title">What do we do</h2>
+                <ul class="list what-we-do">
+                    <li class="what-we-do__item">
+                        <img srcset="./images/development-1x.jpg 1x, ./images/development-2x.jpg 2x" src="./images/development-1x.jpg" alt="development" width="370">
+                        <div class="plashka-what-we-do">
+                            <h3 class="third-title white">Desktop technologies</h3>
+                        </div>
+                    </li>
+                    <li class="what-we-do__item">
+                        <img srcset="./images/wireframing-1x.jpg 1x, ./images/wireframing-2x.jpg 2x" src="./images/wireframing-1x.jpg" alt="wireframing" width="370">
+                        <div class="plashka-what-we-do">
+                            <h3 class="third-title white">Mobile applications</h3>
+                        </div>
+                    </li>
+                    <li class="what-we-do__item">
+                        <img  srcset="./images/chooseColour-1x.jpg 1x, ./images/chooseColour-2x.jpg 2x" src="./images/chooseColour-1x.jpg" alt="choose Color" width="370">
+                        <div class="plashka-what-we-do">
+                            <h3 class="third-title white">Design solutions</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="light-grey-bg section-double-padding">
+                <div class="container">
+                    <h2 class="second-title">Our team</h2>
+                    <ul class="list card">
+                        <li class="card__item">
+
+                            <picture>
+                                <source media="(min-width: 1140px)" srcset="./images/ihorD-1x.jpg 1x, ./images/ihorD-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/ihorD-tablet-1x.jpg 1x, ./images/ihorD-tablet-2x.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="./images/ihorD-mobile-1x.jpg 1x, ./images/ihorD-mobile-2x.jpg 2x">
+                                <img src="./images/ihorD-mobile-1x.jpg" alt="Product Designer">
+                            </picture>
+
+                            <div class="card-studio-block">
+                                <h3 class="card-title">Igor Demyanenko</h3>
+                                <p class="card-paragraph">Product Designer</p>
+                                    <ul class="cards-icons-block">
+                                        <li class="cards-icons-block__item">
+                                            <a href="" class="card-icon">
+                                                <svg width = "20" height = "20">
+                                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="cards-icons-block__item">
+                                            <a href="" class="card-icon">
+                                                <svg width = "20" height = "20">
+                                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="cards-icons-block__item">
+                                            <a href="" class="card-icon">
+                                                <svg width = "20" height = "20">
+                                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="cards-icons-block__item">
+                                            <a href="" class="card-icon">
+                                                <svg width = "20" height = "20">
+                                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="card__item">
+
+                            <picture>
+                                <source media="(min-width: 1140px)" srcset="./images/olhaR-1x.jpg 1x, ./images/olhaR-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/olhaR-tablet-1x.jpg 1x, ./images/olhaR-tablet-2x.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="./images/olhaR-mobile-1x.jpg 1x, ./images/olhaR-mobile-2x.jpg 2x">
+                                <img src="./images/olhaR-mobile-1x.jpg" alt="Frontend Developer">
+                            </picture>
+
+                            <div class="card-studio-block">
+                                <h3 class="card-title">Olga Repina</h3>
+                                <p class="card-paragraph">Frontend Developer</p>
+                                <ul class="cards-icons-block">
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card__item">
+
+                            <picture>
+                                <source media="(min-width: 1140px)" srcset="./images/nikT-1x.jpg 1x, ./images/nikT-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/nikT-tablet-1x.jpg 1x, ./images/nikT-tablet-2x.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="./images/nikT-mobile-1x.jpg 1x, ./images/nikT-mobile-2x.jpg 2x">
+                                <img src="./images/nikT-mobile-1x.jpg" alt="Marketing">
+                            </picture>
+                            
+                            <div class="card-studio-block">
+                                <h3 class="card-title">Nikolay Tarasov</h3>
+                                <p class="card-paragraph">Marketing</p>
+                                <ul class="cards-icons-block">
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="card__item">
+
+                            <picture>
+                                <source media="(min-width: 1140px)" srcset="./images/myhailY-1x.jpg 1x, ./images/myhailY-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/myhailY-tablet-1x.jpg 1x, ./images/myhailY-tablet-2x.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="./images/myhailY-mobile-1x.jpg 1x, ./images/myhailY-mobile-2x.jpg 2x">
+                                <img src="./images/myhailY-mobile-1x.jpg" alt="UI Designer" style="width: 100%; height: auto;">
+                            </picture>
+
+                            <div class="card-studio-block">
+                                <h3 class="card-title">Mikhail Ermakov</h3>
+                                <p class="card-paragraph">UI Designer</p>
+                                <ul class="cards-icons-block">
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="cards-icons-block__item">
+                                        <a href="" class="card-icon">
+                                            <svg width = "20" height = "20">
+                                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class="section-double-padding">
+            <div class="container">
+                <h2 class="second-title">Regular clients</h2>
+                <ul class="list our-clients-block">
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "41" height = "47">
+                                <use href="./images/sprite.svg#icon-group1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "40" height = "52">
+                                <use href="./images/sprite.svg#icon-group-11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "43" height = "41">
+                                <use href="./images/sprite.svg#icon-group-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "84" height = "41">
+                                <use href="./images/sprite.svg#icon-group-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "63" height = "45">
+                                <use href="./images/sprite.svg#icon-group-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="our-clients-block__item">
+                        <a href="" class="clients-icon">
+                            <svg width = "94" height = "44">
+                                <use href="./images/sprite.svg#icon-group-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="grey-bg">
+        <div class="container footer-section">
+            <div class="div-logo-address">
+                <a href="" class="logo logo__footer link"><span class="accent">Web</span>Studio</a>
+                <address class="block">
+                    <p class="block__address">Kyiv, Lesi Ukrainky Ave., 26</p>
+                    <a href="mailto:info@devstudio.com" class="block__contact-footer link">info@example.com</a>
+                    <a href="tel:+380961111111" class="block__contact-footer link">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="join-block-footer">
+                <h3 class="third-title footer">Join us</h3>
+                <ul class="cards-icons-block">
+                    <li class="cards-icons-block__item">
+                        <a href="" class="card-icon card-icon__footer">
+                            <svg width = "20" height = "20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="cards-icons-block__item">
+                        <a href="" class="card-icon card-icon__footer">
+                            <svg width = "20" height = "20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="cards-icons-block__item">
+                        <a href="" class="card-icon card-icon__footer">
+                            <svg width = "20" height = "20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="cards-icons-block__item">
+                        <a href="" class="card-icon card-icon__footer">
+                            <svg width = "20" height = "20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subscribe-block-footer">
+                <h3 class="third-title footer">Subscribe to the newsletter</h3>
+                <form action="" class="form-block-footer">
+                    <input type="text" name="email-footer" id="email-footer" placeholder="E-mail" class="form-block-footer__input">
+                    <button type="submit" class="button-hero button-hero__footer-btn-svg">Subscribe
+                        <svg width = "24" height = "24" class="svg-footer">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./modal.js"></script>
+    <script src="./burger.js"></script>
+
+</body>
+</html>

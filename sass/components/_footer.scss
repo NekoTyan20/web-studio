@@ -1,0 +1,141 @@
+.footer-section{
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.div-logo-address{
+    @media screen and (max-width: 1139px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.block__address{
+    margin: 0;
+    margin-bottom: 9px;
+    color: $white-color;
+}
+
+.block__contact-footer{
+    margin-bottom: 9px;
+
+    color: $white-opacity-color;
+    display: block;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+
+.block__address,
+.block__contact-footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+
+
+
+
+
+.join-block-footer{
+    @media screen and (max-width: 1139px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
+}
+
+
+.card-icon{
+    &__footer{
+
+        fill: $white-color;
+        background-color: $white-opacity-color-icons;
+
+        &:hover, &:focus{
+            background-color: $accent-color;
+        }
+    }
+}
+
+.subscribe-block-footer{
+    margin-left: auto;
+
+    @media screen and (max-width: 1139px) {
+        margin-right: auto;
+    }
+}
+
+.form-block-footer{
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+
+    &__input{
+        width: 100%;
+        padding: 15px 16px;
+
+        margin-bottom: 20px;
+
+        color: $bg-card-portfolio;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: transparent;
+        caret-color: $bg-card-portfolio;
+
+        @media screen and (min-width: $tablet) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 358px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.button-hero{
+    @media screen and (max-width: 1139px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__footer-btn-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        @media screen and (min-width: $desktop) {
+            margin-left: 12px;
+        }
+        
+        fill: $white-color;
+
+        &:hover{
+            fill: $accent-color;
+        }
+    }
+}
+
+.svg-footer{
+    margin-left: 10px;
+}
