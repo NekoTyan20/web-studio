@@ -10,7 +10,7 @@
     margin-right: auto;
     background-color: $bg-footer;
     
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(/images/overlay-mobile-1x.jpg) 1x, url(/images/overlay-mobile-2x.jpg) 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/overlay-mobile-1x.jpg) 1x, url(../images/overlay-mobile-2x.jpg) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,14 +19,14 @@
         max-width: 768px;
         height: 400px;
 
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(/images/overlay-tablet-1x.jpg) 1x, url(/images/overlay-tablet-2x.jpg) 2x);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/overlay-tablet-1x.jpg) 1x, url(../images/overlay-tablet-2x.jpg) 2x);
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
         height: 600px;
 
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(/images/overlay-desktop-1x.jpg) 1x, url(/images/overlay-desktop-2x.jpg) 2x);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../images/overlay-desktop-1x.jpg) 1x, url(../images/overlay-desktop-2x.jpg) 2x);
     }
 }
 
