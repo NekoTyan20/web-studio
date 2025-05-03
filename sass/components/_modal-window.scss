@@ -203,7 +203,7 @@
         &:checked + .icon{
             border-color: transparent;
             background-color: $accent-color;
-            background-image: url('/images/icon-checkbox.svg');
+            background-image: url('../images/icon-checkbox.svg');
 
             background-size: contain;
             background-repeat: no-repeat;

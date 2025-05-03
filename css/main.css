@@ -390,7 +390,7 @@ img {
 .form-checkbox input:checked + .icon {
   border-color: transparent;
   background-color: #2196F3;
-  background-image: url("/images/icon-checkbox.svg");
+  background-image: url("../images/icon-checkbox.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
